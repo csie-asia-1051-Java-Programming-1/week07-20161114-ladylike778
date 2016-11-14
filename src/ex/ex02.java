@@ -18,7 +18,7 @@ public class ex02 {
 	}
 	public static float var (float v, int data[]){
 		float sum=0;
-		for(int i=0;i<v;i++){
+		for(int i=0;i<data.length;i++){
 			
 			sum=sum+((v-data[i])*(v-data[i]));
 			
