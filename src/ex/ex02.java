@@ -1,10 +1,6 @@
 package ex;
-/*
- * Date: 2016/11/14
- * Author: 1050210XX OOO
- */
 import java.util.*;
-public class ex01 {
+public class ex02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,11 +13,12 @@ public class ex01 {
 		    sum=sum+data[i];
 		}sum=sum/n;
 		System.out.println(var(sum,data)/n);
+		System.out.println(std(var(sum,data)/n));
 
 	}
 	public static float var (float v, int data[]){
 		float sum=0;
-		for(int i=0;i<data.length;i++){
+		for(int i=0;i<v;i++){
 			
 			sum=sum+((v-data[i])*(v-data[i]));
 			
@@ -30,9 +27,17 @@ public class ex01 {
 		
 	return sum;}
 
+	public static float std(float g){
+		g=(float)Math.sqrt(g);
+		
+	return g;	
+	}
+
+
+
+
 
 
 }
-	
 
 
